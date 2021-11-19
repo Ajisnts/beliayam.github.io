@@ -17,6 +17,9 @@ body {
       opacity: 0.8;
     }
   }
+  label {
+    margin-bottom: 1em;
+  }
 }
 
 .navbar {
@@ -27,7 +30,7 @@ body {
 }
 
 .btn {
-  border-radius: 1em;
+  border-radius: 2em;
 }
 
 // main start
@@ -57,12 +60,78 @@ body {
 }
 // category end
 
+// footer start
 footer {
   p {
     background-color: $secondary-color;
     color: $primary-color;
+    font-size: 2em;
   }
 }
+// footer end
+
+// signin start
+.signin {
+  h1 {
+    font-size: 4em;
+    color: $primary-color;
+  }
+  h2 {
+    color: $primary-color;
+    font-size: 4em;
+  }
+  .btn {
+    width: 10em;
+    position: relative;
+  }
+  .btn-fb {
+    background-color: cornflowerblue;
+    color: white;
+  }
+  input {
+    border-radius: 2em;
+    font-size: 1.3em;
+    color: $secondary-text;
+    &:focus,
+    ::-webkit-input-placeholder {
+      color: $secondary-text;
+    }
+  }
+}
+// signin end
+
+// homepage start
+.homepage {
+  .navbar {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 1px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  .sidebar {
+    float: left;
+    width: 20%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 1px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    input {
+      border-radius: 2em;
+    }
+  }
+  .main {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    height: 300px; /* only for demonstration, should be removed */
+    input {
+      border-radius: 2em;
+    }
+    .col-3 {
+      border-radius: 0.7em;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 1px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+// homepage end
 
 @media screen and (max-width: 768px) {
   .navbar {
@@ -96,5 +165,18 @@ footer {
 
   footer {
     text-align: center;
+  }
+
+  .signin {
+    h2 {
+      font-size: 2.6em;
+    }
+  }
+
+  .homepage {
+    .sidebar {
+      width: 100%;
+      height: auto;
+    }
   }
 }

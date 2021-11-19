@@ -15,13 +15,17 @@ body a:hover {
   opacity: 0.8;
 }
 
+body label {
+  margin-bottom: 1em;
+}
+
 .navbar .active {
   border-bottom: 3px solid #ce1919;
   margin-bottom: -0.6em;
 }
 
 .btn {
-  border-radius: 1em;
+  border-radius: 2em;
 }
 
 .main {
@@ -54,6 +58,77 @@ body a:hover {
 footer p {
   background-color: #ce1919;
   color: #ffffff;
+  font-size: 2em;
+}
+
+.signin h1 {
+  font-size: 4em;
+  color: #ffffff;
+}
+
+.signin h2 {
+  color: #ffffff;
+  font-size: 4em;
+}
+
+.signin .btn {
+  width: 10em;
+  position: relative;
+}
+
+.signin .btn-fb {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.signin input {
+  border-radius: 2em;
+  font-size: 1.3em;
+  color: #6c757d;
+}
+
+.signin input:focus,
+.signin input ::-webkit-input-placeholder {
+  color: #6c757d;
+}
+
+.homepage .navbar {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 1px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 1px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.homepage .sidebar {
+  float: left;
+  width: 20%;
+  height: 100%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 1px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 1px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.homepage .sidebar input {
+  border-radius: 2em;
+}
+
+.homepage .main {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 300px;
+  /* only for demonstration, should be removed */
+}
+
+.homepage .main input {
+  border-radius: 2em;
+}
+
+.homepage .main .col-3 {
+  border-radius: 0.7em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 1px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 1px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.homepage .main .col-3 p {
+  font-size: 0.9em;
 }
 
 @media screen and (max-width: 768px) {
@@ -82,6 +157,13 @@ footer p {
   }
   footer {
     text-align: center;
+  }
+  .signin h2 {
+    font-size: 2.6em;
+  }
+  .homepage .sidebar {
+    width: 100%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
